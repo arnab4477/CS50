@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<div>
+
+    <h2>Stocks</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ stocks.name }}</td>
+                    <td>{{ usd(stocks.price) }}</td>
+                    <td>{{ stocks.symbol }}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+{% endblock %}

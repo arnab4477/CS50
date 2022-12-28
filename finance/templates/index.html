@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<div>
+
+    <h2>Stocks</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.total }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ (stock.total * stock.price) | usd }}</td>
+                </tr>
+            {% endfor %}
+
+            <tr>
+                <td>Cash</td>
+                <td colspan=2></td>
+                <td>{{ usd(cash) }}</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <td colspan="3"></td>
+            <td>{{ usd(grand_total) }}</td>
+        </tfoot>
+    </table>
+</div>
+<img src={{ image }}>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+sort1 uses:Bubble sort
+How do you know?: This is Bubble sort because it takes minimum time to sort between the sorted 5000 and 50000 numbers at the same time having greater time difference than sort2 while sorting random and reversed 5000 and 50000 numbers. As bubble sort has the Big O of n for sorted numbers, it is the bubble sort.
+sort2 uses:Merge sort
+How do you know?: This is Merge sort because ot takes minimum time to sort between 5000 and 50000 numbers in any given order.
+sort3 uses:Selection sort
+How do you know?: Maximum time difference between sorting 5000 and 50000 numbers in any given order. Maximum time difference between sorting 5000 and 50000 numbers in any given order.

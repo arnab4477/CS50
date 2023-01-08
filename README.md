@@ -1,2 +1,2 @@
 # CS50
-This is an original, unedited copy of my entire CS50 (2021) solutions, including all labs, problems sets and the final project.
+Since the original repository is privated, I created this duplicate repo to show all my solutions of Harvard's CS50 2021. This includes all labs, problems sets and the final project.
